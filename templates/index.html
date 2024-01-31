@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>경기대 룸메이트 구하기</title>
+    <link rel="stylesheet" href="/static/styles.css">  
+</head>
+<body>
+    <section>
+        <h1>경기대 룸메이트 구하기</h1>
+        <form action="/submit_profile" method="post">
+            <label for="name">에브리타임 아이디:(원하는 사람에게 에브리타임으로 연락할때 필요하므로 닉네임 말고 아이디를 적어야 함)</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="gender">성별:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">남자</option>
+                <option value="female">여자</option>
+            </select>
+
+            <label for="semester">학기/반기:</label>
+            <select id="semester" name="semester" required>
+                <option value="16">16주(학기)</option>
+                <option value="25">25주(반기)</option>
+            </select>
+
+            <label for="mbti">MBTI:</label>
+            <input type="text" id="mbti" name="mbti" required>
+
+<!--            
+            <label for="department">학과:</label>
+            <input type="text" id="department" name="department" required>
+
+            <label for="age">나이:</label>
+            <input type="number" id="age" name="age" required> -->
+
+            <label for="sleep_time">취침 시간:</label>
+            <input type="text" id="sleep_time" name="sleep_time" required>
+
+            <label for="cleaning">방청소:</label>
+            <select id="cleaning" name="cleaning" required>
+                <option value="daily">매일</option>
+                <option value="weekly_1">일주일에 1번</option>
+                <option value="weekly_2_3">일주일에 2-3번</option>
+                <option value="weekly_4">일주일에 4번</option>
+                <option value="when_dirty">더러울 때</option>
+            </select>
+
+            <label for="bathroom_cleaning">화장실 청소:</label>
+            <select id="bathroom_cleaning" name="bathroom_cleaning" required>
+                <option value="daily">매일</option>
+                <option value="weekly_1">일주일에 1번</option>
+                <option value="weekly_2_3">일주일에 2-3번</option>
+                <option value="weekly_4">일주일에 4번</option>
+                <option value="when_dirty">더러울 때</option>
+            </select>
+
+            <label for="trash_disposal">분리수거:</label>
+            <select id="trash_disposal" name="trash_disposal" required>
+                <option value="separately">분리수거함 두고 한번에</option>
+                <option value="each_time">생길 때마다 각자 알아서</option>
+            </select>
+
+            <label for="item_sharing">물건 공유:</label>
+            <select id="item_sharing" name="item_sharing" required>
+                <option value="allowed">허용</option>
+                <option value="permission_required">허락받고 가능한 것만</option>
+                <option value="all_possible">전부 가능</option>
+            </select>
+
+            <label for="gaming_music">게임/노래 듣기 등 할 때 이어폰 사용:</label>
+            <select id="gaming_music" name="gaming_music" required>
+                <option value="yes">사용</option>
+                <option value="no">미사용</option>
+            </select>
+
+            <label for="snoring">코골이:</label>
+            <select id="snoring" name="snoring" required>
+                <option value="yes">O</option>
+                <option value="no">X</option>
+                <option value="occasional">가끔</option>
+            </select>
+
+            <label for="deep_sleep">잠귀가 어두운가요?:</label>
+            <select id="deep_sleep" name="deep_sleep" required>
+                <option value="yes">예</option>
+                <option value="no">아니오</option>
+                <option value="unknown">모름</option>
+            </select>
+
+            <label for="trash_share">방 쓰레기통 공유 여부:</label>
+            <select id="trash_share" name="trash_share" required>
+                <option value="yes">예</option>
+                <option value="no">아니오</option>
+            </select>
+
+            <label for="study_lamp_off_time">야간 공부시 스탠드 소등 시간:</label>
+            <input type="text" id="study_lamp_off_time" name="study_lamp_off_time" required>
+
+            <label for="smoking_preference">흡연:</label>
+            <select id="smoking_preference" name="smoking_preference" required>
+                <option value="cigarette">노담</option>
+                <option value="both">연초</option>
+                <option value="non_smoker">전담</option>
+            </select>
+
+            <label for="relationship_preference">관계:</label>
+            <select id="relationship_preference" name="relationship_preference" required>
+                <option value="best_friend">베스트 프렌드</option>
+                <option value="business">비지니스</option>
+                <option value="middle">중간</option>
+            </select>
+
+            <label for="phone_calls_preference">전화통화:</label>
+            <select id="phone_calls_preference" name="phone_calls_preference" required>
+                <option value="outside">외부</option>
+                <option value="parents">부모님과 짧은 전화만</option>
+                <option value="short">짧은 전화만</option>
+                <option value="no_preference">무관</option>
+            </select>
+
+            <button type="submit">프로필 제출</button>
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ profile_data.name }}의 프로필</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+    <section>
+        <h1>{{ profile_data.name }}의 프로필</h1>
+        <!-- 프로필 세부 정보 추가 -->
+
+        <ul>
+            <li><strong>성별:</strong> {{ profile_data.gender }}</li>
+            <li><strong>학기/반기:</strong> {{ profile_data.semester }}</li>
+            <li><strong>MBTI:</strong> {{ profile_data.mbti }}</li> <!-- 수정된 부분 -->
+<!--            <li><strong>학과:</strong> {{ profile_data.department }}</li> -->
+<!--            <li><strong>나이:</strong> {{ profile_data.age }}</li> -->
+            <li><strong>취침 시간:</strong> {{ profile_data.sleep_time }}</li>
+            <li><strong>방청소:</strong> {{ profile_data.cleaning }}</li>
+            <li><strong>화장실 청소:</strong> {{ profile_data.bathroom_cleaning }}</li>
+            <li><strong>분리수거:</strong> {{ profile_data.trash_disposal }}</li>
+            <li><strong>물건 공유:</strong> {{ profile_data.item_sharing }}</li>
+            <li><strong>게임/노래 듣기 등 할 때 이어폰 사용:</strong> {{ profile_data.gaming_music }}</li>
+            <li><strong>코골이:</strong> {{ profile_data.snoring }}</li>
+            <li><strong>잠귀가 어두운가요?:</strong> {{ profile_data.deep_sleep }}</li>
+            <li><strong>방 쓰레기통 공유 여부:</strong> {{ profile_data.trash_share }}</li>
+            <li><strong>야간 공부시 스탠드 소등 시간:</strong> {{ profile_data.study_lamp_off_time }}</li>
+            <li><strong>흡연:</strong> {{ profile_data.smoking_preference }}</li>
+            <li><strong>관계:</strong> {{ profile_data.relationship_preference }}</li>
+            <li><strong>전화통화:</strong> {{ profile_data.phone_calls_preference }}</li>
+        </ul>
+    </section>
+    <!-- profile_detail.html 하단에 추가 -->
+<!-- profile_detail.html 내에 "다른 프로필 보기" 버튼 수정 -->
+<div style="text-align: center;">
+    <button onclick="window.location.href='/view_profiles';">다른 프로필 보기</button>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+/* Reset and Basic Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #e9eff1;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+  padding: 20px;
+}
+
+section {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+h1 {
+  color: #0a3f5e;
+  margin-bottom: 20px;
+}
+
+h2, p {
+  margin-bottom: 10px;
+}
+
+/* Form and Elements */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+input, select, button {
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Enhancements and Extras */
+input[type="text"], input[type="number"], select {
+  margin-bottom: 15px;
+}
+
+/* Custom Select Arrow */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>');
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  padding-right: 30px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  body {
+      padding: 10px;
+  }
+
+  section {
+      padding: 20px;
+      margin: 20px auto;
+  }
+
+  form {
+      gap: 10px;
+  }
+}
+
+/* Adding some animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+section {
+  animation: fadeIn 1s ease-out;
+}
